@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 3" viewBox="0 0 24 24">
+    <g fill="#b56d6d" class="nc-icon-wrapper">
+        <path
+            d="M12.51 5.974l-.51.517-.51-.517a4.939 4.939 0 0 0-7.038 0 5.124 5.124 0 0 0 0 7.148l5.393 5.475a3.025 3.025 0 0 0 4.31 0l5.393-5.475a5.124 5.124 0 0 0 0-7.148 4.939 4.939 0 0 0-7.039 0z"
+            fill="none" stroke="#b56d6d" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5"></path>
+        <path d="M0 0h24v24H0z" fill="none"></path>
+    </g>
+</svg>

@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeroComponent } from './core/features/hero/hero.component';
 import { AboutComponent } from './core/features/about/about.component';
 import { ContactComponent } from './core/features/contact/contact.component';
+import { HighlightsComponent } from './core/features/highlights/highlights.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ContactComponent } from './core/features/contact/contact.component';
     HeroComponent,
     AboutComponent,
     ContactComponent,
+    HighlightsComponent
   ],
   imports: [
     BrowserModule,
