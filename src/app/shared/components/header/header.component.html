@@ -1,0 +1,102 @@
+<header class="absolute w-full bg-transparent z-50">
+  <div class="container mx-auto px-4 flex justify-between items-center py-4">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="/assets/icons/logo.svg" alt="Logo" class="h-8 w-auto" />
+    </a>
+
+    <!-- Navigation Menu (Desktop) -->
+    <nav class="hidden lg:flex items-center space-x-8">
+      <a href="/" class="text-white hover:text-gray-300">Inicio</a>
+      <a href="/profesionales" class="text-white hover:text-gray-300"
+        >Profesionales</a
+      >
+      <div class="relative group">
+        <button class="text-white hover:text-gray-300 flex items-center">
+          Servicios
+          <svg
+            class="w-4 h-4 ml-1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <!-- Dropdown -->
+        <div
+          class="absolute top-full mt-2 left-0 bg-white rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity z-20 hidden group-hover:block"
+        >
+          <a
+            href="/servicio-1"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-800 rounded-t-lg"
+            >Servicio 1</a
+          >
+          <a
+            href="/servicio-2"
+            class="block px-5 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-800 rounded-b-lg"
+            >Servicio 2</a
+          >
+        </div>
+      </div>
+      <a href="/blog" class="text-white hover:text-gray-300">Blog</a>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="flex items-center space-x-4">
+      <a
+        href="/contact"
+        class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded hidden lg:inline-block"
+        >Contáctanos</a
+      >
+      <!-- Mobile Menu Button -->
+      <div class="relative lg:hidden">
+        <button (click)="toggleDropdown()" class="focus:outline-none">
+          <img src="/assets/icons/menu.svg" alt="Menu" class="h-8 w-8" />
+        </button>
+
+        <!-- Mobile Dropdown Menu -->
+        <div
+          class="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg z-40 transition-opacity duration-300"
+          [ngClass]="{
+            'opacity-100 pointer-events-auto scale-100': isDropdownOpen,
+            'opacity-0 pointer-events-none scale-95': !isDropdownOpen
+          }"
+        >
+          <a
+            href="/"
+            class="block px-5 py-3 text-gray-800 hover:text-gray-600 hover:bg-gray-50 border-b border-gray-200"
+            >Inicio</a
+          >
+          <a
+            href="/profesionales"
+            class="block px-5 py-3 text-gray-800 hover:text-gray-600 hover:bg-gray-50 border-b border-gray-200"
+            >Profesionales</a
+          >
+          <a
+            href="/servicios"
+            class="block px-5 py-3 text-gray-800 hover:text-gray-600 hover:bg-gray-50 border-b border-gray-200"
+            >Servicios</a
+          >
+          <a
+            href="/blog"
+            class="block px-5 py-3 text-gray-800 hover:text-gray-600 hover:bg-gray-50 border-b border-gray-200"
+            >Blog</a
+          >
+          <a
+            href="/contact"
+            class="block bg-red-500 text-white text-center font-semibold py-3 rounded-b-lg hover:bg-red-600"
+          >
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
