@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 // Import shared and core components
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -26,6 +27,7 @@ import { ServiceComponent } from './core/features/service/service.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule, // Ensure this is included
   ],
