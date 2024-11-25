@@ -11,6 +11,7 @@ import { HeroComponent } from './core/features/hero/hero.component';
 import { AboutComponent } from './core/features/about/about.component';
 import { ContactComponent } from './core/features/contact/contact.component';
 import { HighlightsComponent } from './core/features/highlights/highlights.component';
+import { ServiceComponent } from './core/features/service/service.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HighlightsComponent } from './core/features/highlights/highlights.compo
     HeroComponent,
     AboutComponent,
     ContactComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
