@@ -18,52 +18,19 @@
         </div>
 
         <!-- Right Section: Contact Form -->
-        <div class="bg-white shadow-lg rounded-lg p-8">
+        <div class="bg-white shadow-lg rounded-lg p-8 text-center">
             <h3 class="text-2xl font-semibold text-[#4b2e2e] mb-6">¿Tienes dudas?</h3>
             <p class="text-[#4b2e2e] text-sm mb-6">
-                Rellena el formulario de contacto y te responderemos en la mayor brevedad posible.
+                Haz clic en el botón de abajo para escribirnos un mensaje directamente.
             </p>
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="space-y-6">
-                <!-- Name Field -->
-                <div>
-                    <label for="name" class="block text-[#4b2e2e] text-sm font-medium mb-2">Nombre *</label>
-                    <input type="text" id="name" name="name" required [(ngModel)]="name"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d89f9f]"
-                        placeholder="Ingresa tu nombre" />
-                </div>
 
-                <!-- Email Field -->
-                <div>
-                    <label for="email" class="block text-[#4b2e2e] text-sm font-medium mb-2">Email *</label>
-                    <input type="email" id="email" name="email" required [(ngModel)]="email"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d89f9f]"
-                        placeholder="Ingresa tu email" />
-                </div>
-
-                <!-- Phone Field -->
-                <div>
-                    <label for="phone" class="block text-[#4b2e2e] text-sm font-medium mb-2">Teléfono *</label>
-                    <input type="tel" id="phone" name="phone" required [(ngModel)]="phone"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d89f9f]"
-                        placeholder="Ingresa tu teléfono" />
-                </div>
-
-                <!-- Message Field -->
-                <div>
-                    <label for="message" class="block text-[#4b2e2e] text-sm font-medium mb-2">Mensaje *</label>
-                    <textarea id="message" name="message" rows="4" required [(ngModel)]="message"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d89f9f]"
-                        placeholder="Escribe aquí tu consulta..."></textarea>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit"
-                        class="bg-[#d89f9f] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#c17f7f] focus:outline-none focus:ring-2 focus:ring-[#d89f9f] focus:ring-offset-2">
-                        Enviar mensaje
-                    </button>
-                </div>
-            </form>
+            <!-- Email Button -->
+            <div class="text-center">
+                <a href="mailto:noeliasanchezpsicologa@gmail.com?subject=Consulta&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20..."
+                    class="bg-[#d89f9f] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#c17f7f] focus:outline-none focus:ring-2 focus:ring-[#d89f9f] focus:ring-offset-2 inline-block">
+                    Enviar mensaje
+                </a>
+            </div>
         </div>
     </div>
 </div>
