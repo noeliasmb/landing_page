@@ -13,6 +13,7 @@ import { AboutComponent } from './core/features/about/about.component';
 import { ContactComponent } from './core/features/contact/contact.component';
 import { HighlightsComponent } from './core/features/highlights/highlights.component';
 import { ServiceComponent } from './core/features/service/service.component';
+import { ReviewComponent } from './core/features/review/review.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ServiceComponent } from './core/features/service/service.component';
     AboutComponent,
     ContactComponent,
     HighlightsComponent,
-    ServiceComponent
+    ServiceComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
