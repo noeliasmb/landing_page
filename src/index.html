@@ -1,13 +1,87 @@
 <!doctype html>
-<html lang="en">
+<html lang="es"> <!-- Se cambió el idioma de "en" a "es" para mejorar la indexación para hablantes de español -->
+
 <head>
   <meta charset="utf-8">
-  <title>LandingPage</title>
+  <title>Psicología con Noelia Sánchez - Terapia, Escucha Activa y Bienestar</title>
+  <!-- Título optimizado con palabras clave SEO -->
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Meta etiquetas esenciales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Se agregó "maximum-scale=1" para evitar zoom excesivo -->
+  <meta name="description"
+    content="Consulta de psicología con Noelia Sánchez: un espacio cercano, seguro y de confianza. Terapia personalizada y escucha activa para tu bienestar emocional.">
+  <!-- Meta descripción SEO -->
+  <meta name="robots" content="index, follow"> <!-- Instrucciones para los motores de búsqueda -->
+  <meta name="author" content="Noelia Sánchez"> <!-- Nombre del autor de la página -->
+  <meta name="keywords"
+    content="psicología, terapia, Noelia Sánchez, bienestar emocional, consulta psicológica, escucha activa, autoconocimiento, apoyo emocional, salud mental">
+  <!-- Palabras clave relevantes -->
+  <meta property="og:title" content="Psicología con Noelia Sánchez - Terapia, Escucha Activa y Bienestar">
+  <!-- Título para redes sociales -->
+  <meta property="og:description"
+    content="Consulta de psicología con Noelia Sánchez: un espacio cercano, seguro y de confianza. Terapia personalizada y escucha activa para tu bienestar emocional.">
+  <!-- Descripción para redes sociales -->
+  <meta property="og:type" content="website"> <!-- Indica que se trata de un sitio web -->
+  <meta property="og:url" content="https://tusitio.com"> <!-- URL del sitio -->
+  <meta property="og:image" content="https://tusitio.com/assets/images/preview.jpg">
+  <!-- Imagen de vista previa para compartir -->
+  <meta name="twitter:card" content="summary_large_image"> <!-- Indica a Twitter que es una tarjeta de vista previa -->
+  <meta name="twitter:title" content="Psicología con Noelia Sánchez - Terapia, Escucha Activa y Bienestar">
+  <meta name="twitter:description"
+    content="Consulta de psicología con Noelia Sánchez: un espacio cercano, seguro y de confianza. Terapia personalizada y escucha activa para tu bienestar emocional.">
+  <meta name="twitter:image" content="https://tusitio.com/assets/images/preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <!-- Se recomienda que el favicon sea un PNG para una mejor compatibilidad -->
+
+  <!-- Preconexión para mejorar la carga de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Precarga de recursos críticos -->
+  <link rel="preload" href="/assets/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/images/preview.jpg" as="image">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Scripts de rendimiento -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID');
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
+
+  <!-- Datos estructurados de Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Noelia Sánchez",
+    "description": "Psicóloga especializada en bienestar emocional, terapia personalizada y apoyo psicológico para adultos y adolescentes.",
+    "url": "https://tusitio.com",
+    "image": "https://tusitio.com/assets/images/noelia.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/noeliasanchez/",
+      "https://www.facebook.com/noeliasanchezpsicologa"
+    ]
+  }
+  </script>
+
+  <!-- Accesibilidad y usabilidad -->
+  <noscript>
+    Tu navegador no soporta JavaScript o está deshabilitado. Actívalo para disfrutar de todas las funcionalidades del
+    sitio.
+  </noscript>
 </body>
+
 </html>
