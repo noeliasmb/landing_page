@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HeroComponent } from './core/features/hero/hero.component';
-import { AboutComponent } from './core/features/about/about.component';
-import { ContactComponent } from './core/features/contact/contact.component';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HeroComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: 'home' }, // Wildcard route
+  // A single route that loads the main component containing all sections
+  { path: '', component: AppComponent },
+  // Fallback route if an unknown path is accessed
+  { path: '**', redirectTo: '' }
 ];
 
+const routerOptions: ExtraOptions = {
+  initialNavigation: 'enabledBlocking',
+  anchorScrolling: 'enabled',
+  scrollPositionRestoration: 'enabled'
+};
+
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { initialNavigation: 'enabledBlocking' }),
-  ],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
